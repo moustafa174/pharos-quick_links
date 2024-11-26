@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Links</title>
+    <!-- إضافة الفافيكون -->
+    <link rel="icon" href="logo-pharos.png" type="image/png">
+    <!-- إضافة مكتبة Font Awesome لأيقونات السوشيال ميديا -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* الألوان */
+        :root {
+            --dark-green: #3F4930; /* الأخضر الداكن */
+            --light-gray-green: #BDCBA; /* الرمادي الفاتح مع الأخضر */
+            --light-golden: #F0DFA7; /* الأصفر الفاتح */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: var(--light-gray-green); /* خلفية الصفحة بالرمادي الفاتح */
+        }
+        header {
+            background-color: var(--dark-green); /* الخلفية بالأخضر الداكن */
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start; /* محاذاة العناصر إلى اليسار */
+            gap: 15px;
+        }
+        header img {
+            height: 115px; /* تعديل حجم الشعار */
+        }
+        header .header-text {
+            text-align: left;
+            color: var(--light-golden); /* النص باللون الذهبي الفاتح */
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px; /* تعديل حجم خط اسم الجامعة */
+            line-height: 1.6;
+        }
+        header h1 span {
+            display: block;
+            font-size: 18px; /* تعديل حجم خط اسم الجامعة باللغة الإنجليزية */
+        }
+        header h2 {
+            margin: 5px 0 0; /* تقليل المسافة بين اسم الجامعة واسم الكلية */
+            font-size: 14px;
+            color: var(--light-golden); /* اسم الكلية باللون الذهبي الفاتح */
+        }
+        section {
+            margin-top: 20px;
+            text-align: center;
+        }
+        button {
+            display: block;
+            margin: 10px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: var(--light-golden); /* الأزرار باللون الذهبي */
+            color: var(--dark-green); /* النص باللون الأخضر الداكن */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 250px; /* تحديد عرض ثابت لجميع الأزرار */
+        }
+
+        button:hover {
+            background-color: var(--dark-green); /* خلفية الزر عند التفاعل بالأخضر الداكن */
+            color: var(--light-golden); /* النص باللون الذهبي */
+        }
+
+        /* تصميم footer */
+        footer {
+            background-color: var(--dark-green);
+            color: var(--light-golden);
+            padding: 20px;
+            display: flex;
+            justify-content: space-between; /* المسافة بين العناصر */
+            align-items: center;
+            border-radius: 10px;
+            margin-top: 30px;
+            position: fixed; /* لجعل الفوتر دائم في أسفل الصفحة */
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+        footer img {
+            height: 50px; /* حجم الشعار في الفوتر */
+            margin-right: 15px; /* المسافة بين الشعار والنص */
+        }
+        footer .footer-text {
+            text-align: left;
+        }
+        footer .footer-text h1 {
+            margin: 0;
+            font-size: 18px;
+        }
+        footer .footer-text h1 span {
+            font-size: 14px;
+        }
+        footer .footer-text p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+        footer .social-icons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap; /* لضمان أن الأيقونات لا تخرج خارج الفوتر */
+            justify-content: flex-start; /* محاذاة الأيقونات إلى اليسار */
+            margin-top: 10px;
+        }
+        footer .social-icons a {
+            color: var(--light-golden);
+            font-size: 24px; /* حجم الأيقونات */
+            text-decoration: none;
+        }
+        footer .social-icons a:hover {
+            color: white; /* تغيير اللون عند التفاعل */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo-pharos.png" alt="University Logo">
+        <div class="header-text">
+            <h1>
+                <span1>جامعة فاروس بالإسكندرية</span1>
+                <span>Pharos University in Alexandria</span>
+            </h1>
+            <h2>Computer Science & Artificial Intelligence</h2>
+        </div>
+    </header>
+    
+    <section>
+        <button onclick="window.location.href='https://portal.pua.edu.eg/SelfService/Records/ClassSchedule.aspx'">Student Schedule</button>
+        <button onclick="window.location.href='https://portal.pua.edu.eg/SelfService/Home.aspx'">Midterm Schedule</button>
+        <button onclick="window.location.href='midterm-grades-link.html'">Midterm Grades</button>
+        <button onclick="window.location.href='https://portal.pua.edu.eg/SelfService/Reports/StudentAttendanceReport.aspx'">Student Absences</button>
+    </section>
+    
+    <footer>
+        <div class="footer-content">
+            <img src="logo-pharos.png" alt="University Logo">
+            <div class="footer-text">
+                <h1>
+                    <span1>جامعة فاروس بالإسكندرية</span1>
+                </h1>
+                <h1>
+                    <span>Pharos University in Alexandria</span>
+                </h1>
+                <p>Email: info@pharos.edu.eg</p>
+                <p>Phone: +20 3 1234567</p>
+                <p>Address: Alexandria, Egypt</p>
+            </div>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/pharosuniversity" target="_blank">
+                <i class="fab fa-facebook-square"></i>
+            </a>
+            <a href="https://twitter.com/pharosuniversity" target="_blank">
+                <i class="fab fa-twitter-square"></i>
+            </a>
+            <a href="https://www.instagram.com/pharosuniversity" target="_blank">
+                <i class="fab fa-instagram-square"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
